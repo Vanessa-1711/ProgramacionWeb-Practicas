@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARO</title>
+    <!-- Librerias boostrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- hoja de estilos -->
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Menu de lado cliente -->
+    <div class="container-fluid">
+      <!-- Titulo del menu -->
+      <a class="navbar-brand" href="MENUcLIENTE.HTML">CLIENTE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Apartado de los otros apartados -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Apartado de filtrado de categorias -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="MENUcLIENTE.HTML">Filtrado de categorias</a>
+          </li>
+          <!-- Menu de formulario de pedido -->
+          <li class="nav-item">
+            <a class="nav-link" href="formCliente.html">Formulario de pedidos</a>
+          </li>
+          <!-- Menu de salir -->
+          <li class="nav-item">
+            <a class="nav-link" href="INDEX.HTML">Exit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- fin Menu de lado cliente -->
+    <div class="wrapper">
+      <!-- Main content -->
+      <div class="container-fluid">
+        <div class="row" style="display: flex; justify-content: center; align-items: center;">
+          <!-- left column -->
+          <div class="col-md-6" style="max-height: 50vh">
+            <div class="bg-1">
+              <h1 class="t-stroke t-shadow">FORMULARIO DE PEDIDOS</h1>
+            </div>
+            <br>
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <!-- /.card-header -->
+              <form name="form1" method="post" action="">
+                  <div class="card-body">
+                    <!-- apartado de Ingresar id -->
+                    <div class="form-group" id="iddiv">
+                      <label for="id" style="text-align: center;">Ingrese el ID del usuario<span class="obligatorio">(*)</span></label>
+                      <input type="number" class="form-control m-2 input" name="id"  id="id" placeholder="Ingrese el ID" aria-describedby="datosw" required>
+                    </div>
+                    <!-- apartado de Ingresar nombre -->
+                    <div class="form-group" id="nombrediv">
+                      <label for="nombre ">Nombre<span class="obligatorio">(*)</span></label>
+                      <input type="text" class="form-control m-2 input" name="nombre"  id="nombre" placeholder="Ingrese el nombre" aria-describedby="datosw" required>
+                    </div>
+                    
+                    <!-- apartado de Ingresar apellido -->
+                    <div class="form-group" id="p_apellidodiv">
+                      <label for="p_apellido">Apellido Paterno<span class="obligatorio">(*)</span></label>
+                      <input type="text" class="form-control m-2 input" name="p_apellido"  id="p_apellido" placeholder="Ingrese el apellido paterno" aria-describedby="datosw" required>
+                    </div>
+                    <!-- apartado de Ingresar apellido -->
+                    <div class="form-group" id="m_apellidodiv">
+                        <label for="m_apellido">Apellido Materno<span class="obligatorio">(*)</span></label>
+                        <input type="text" class="form-control m-2 input" name="m_apellido"  id="m_apellido" placeholder="Ingrese el apellido materno" aria-describedby="datosw" required>
+                      </div>
+                      <!-- apartado de Ingresar telefono -->
+
+                    <div class="form-group" id="telefonodiv">
+                        <label for="telefono">Telefono<span class="obligatorio">(*)</span></label>
+                        <input type="number" class="form-control m-2 input" name="telefono"  id="telefono" placeholder="Ingrese el telefono" aria-describedby="datosw" required>
+                      </div>
+                    
+                    <!-- apartado de Ingresar email -->
+
+                    <div class="form-group" id="emaildiv">
+                      <label for="exampleInputPassword1">Email<span class="obligatorio">(*)</span></label>
+                      <input type="email" class="form-control m-2 input" name="email"  id="email" placeholder="Ingrese el correo" aria-describedby="datosw" required>
+                    </div>
+                    <!-- apartado de Ingresar direccion-->
+
+                    <div class="form-group" id="dirediv">
+                        <label for="direccion">Direccion<span class="obligatorio">(*)</span></label>
+                        <input type="text" class="form-control m-2 input" name="direccion"  id="direccion" placeholder="Ingrese su direccion" aria-describedby="datosw" required>
+                    </div>
+                    <!-- apartado de Ingresar RFC-->
+
+                    <div class="form-group" id="rfcdiv">
+                        <label for="RFC">RFC<span class="obligatorio">(*)</span></label>
+                        <input type="text" class="form-control m-2 input" name="RFC"  id="RFC" placeholder="Ingrese su RFC" aria-describedby="datosw" required>
+                    </div>
+                    <!-- apartado de Ingresar categoria-->
+
+                    <div class="form-group" id="categoriadiv">
+                        <label for="Categoria">Categoria<span class="obligatorio">(*)</span></label>
+                        <input type="text" class="form-control m-2 input" name="categoria"  id="categoria" placeholder="Ingrese su Categoria" aria-describedby="datosw" required>
+                        <div id="datosw" class="invalid-feedback">
+                            Los datos son obligatorios
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- /.card-body -->
+                  <!-- Apartado de botones de enviar y eliminar-->
+                  <div style="display: flex; justify-content: center; " > 
+                    <button type="button" id="botonEnviar" class="btn btn-primary botonForm" >Enviar</button>
+                    <button type="reset" class="btn btn-primary botonForm">Limpiar</button>
+                  </div>
+                  <!-- se cierra el formulario -->
+                </form>
+              <!-- /.card -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <!-- Modal -->  
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="myModal" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Datos Registrados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Se ingresan los atributos del modal -->
+        <div class="modal-body">
+          <p id="modal-content"></p>
+          <p id="modalID"></p>
+          <p id="modalNombre"></p>
+          <p id="modaldescripcion"></p>
+          <p id="modalprecio"></p>
+          <p id="modalfecha"></p>
+          <p id="modalnotas"></p>
+          <div class="modal-footer">
+            <button type="button" class="btn boton" data-bs-dismiss="modal" id="aceptar">Aceptar</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</nav>
+  <!-- se agrega el archivo js -->
+  <script src="js/appformproductos.js"></script>
+
+    
+</body>
+</html>

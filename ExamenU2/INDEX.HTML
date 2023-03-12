@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Archivos de Bootstrap 5 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>LOGIN</title>
+    <!-- Hoja de estilos -->
+    <link href="estilos.css" rel="stylesheet">
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/a8a964cfb5.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section class="vh-100 gradient-custom">
+        <div class=" py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+                    <form action="" id="form1" method="post">
+                        <!--Imagen del candado-->
+                        <div style="display: flex;justify-content: center;">
+                            <img src="/img/candado.png" width="30%" alt="">
+                        </div>
+                        <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                        
+                        <label for="contra1" class="mb-2">Usuario <span class="obligatorio">(*)</span></label>
+                        <div class="input-group mb-3" id="usua">
+                            <span style="background-color: #E3FDF5" class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                            <input type="text" class="form-control input" name="usuario" id="usuario" aria-label="Username" placeholder="Ingrese su usuario"  aria-describedby="basic-addon1" required>
+                            <div id="userw" class="invalid-feedback">
+                                Tiene que ingresar un usuario
+                            </div>
+                        </div>
+                        
+                        <label for="contra1 " class="mb-2">Contraseña <span class="obligatorio">(*)</span></label>
+                        <div class="input-group mb-3" id="con">
+                            <span style="background-color: #E3FDF5;" class="input-group-text" id="basic-addon2"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" class="form-control input" name="contra" id="contra" aria-label="Password" placeholder="Ingrese su contraseña"  aria-describedby="basic-addon2" required>
+                            <div id="contra2w" class="invalid-feedback">
+                                Tiene que ingresar una contraseña
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center; " >
+                            <button class="btn btn-outline-light btn-lg px-5" type="button" id="botonLogin" >Login</button>
+                            <!--button type="button" id="botonLogin"  class="btn m-1 boton">Acceder</button-->
+                        </div> 
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- Modal -->
+     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="myModal" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Datos Incorrectos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+            <div class="modal-body" >
+            <p id="modal-content"></p>
+            <div style="display: flex; justify-content: right; ">
+                <button type="button" class="btn boton" data-bs-dismiss="modal">Regresar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    
+    <!-- Modal -->
+    <!-- Archivo JavaScript -->
+    <script src="js/appLogin.js"></script>
+
+
+
+
+
+<script></script>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MENU</title>
+  <!-- Librerias boostrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  
+  
+  <!-- hoja de estilos -->
+  <link href="estilos.css" rel="stylesheet">
+  
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed" >
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Menu de lado cliente -->
+    <div class="container-fluid">
+      <!-- Titulo del menu -->
+      <a class="navbar-brand" href="homeCliente.html">CLIENTE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Apartado de los otros apartados -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Apartado de filtrado de categorias -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cliente.html">Filtrado de categorias</a>
+          </li>
+          <!-- Menu de formulario de pedido -->
+          <li class="nav-item">
+            <a class="nav-link" href="formCliente.html">Formulario de pedidos</a>
+          </li>
+          <!-- Menu de salir -->
+          <li class="nav-item">
+            <a class="nav-link" href="INDEX.HTML">Exit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- fin Menu de lado cliente -->
+    </nav>
+
+    <!-- se crea un div donde se almacenaran todos los elementos  -->
+    <div class="wrapper">
+    <!-- Contenedor donde se colocan las tarjetas por medio de JS -->
+    <div class="content-wrapper"  >
+
+      <main style="align-items: center;" >
+      <section class="py-5 text-center container"  >
+          <div class="row py-lg-5" >
+          <div class="col-lg-6 col-md-8 mx-auto"  >
+            <!-- titulo de la pagina -->
+            <div class="bg-1">
+              <h1 class="t-stroke t-shadow">PRODUCTOS</h1>
+            </div>
+            <!-- fin titulo de la pagina -->
+            <!-- botones de filtrado -->
+              <div class="btn botones">
+                  
+              </div>
+            <!-- fin de botones de filtrado -->
+          </div>
+          </div>
+      </section>
+      <!-- tarjetas de los productos las cuales se agregan con js -->
+          <div class="container" style=" width: 100%; max-width: 1900px; height: 80px; display: flex; flex-wrap: wrap; justify-content: center; margin: auto;" >
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 tabla" style="width: 70%; height: 400%; ">
+              
+          </div>
+          </div>
+      <!-- fin de tarhetas priductos -->
+
+      </main>
+  </div>
+</div>
+<!--fin div wrapper  -->
+
+
+
+
+<!-- se llama al archivo js -->
+<script src="js/appMenu.js"></script>
+
+
+</body>
+</html>

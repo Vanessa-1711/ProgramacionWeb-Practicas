@@ -1,0 +1,136 @@
+.col-d-6{
+    width: 700px !important;       
+    height: 200px !important;
+    position: absolute !important;
+    top:50% !important;
+    left: 50% !important;           
+    margin-top: 50px !important;
+    margin-left: -250px !important;
+}
+.bg-1 {
+  text-align: center; 
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 30px; 
+  background-color: rgb(44, 85, 62); 
+  text-shadow: 0 0 9px #208790; 
+  text-transform: uppercase;
+}
+
+.t-stroke {
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #ffffff;
+  -webkit-text-stroke-color: #000000;
+}
+.t-shadow {
+  text-shadow: -3px 3px #208790;
+}
+
+.botonForm:hover{
+  background-color: #56846e !important; 
+
+}
+.botonForm{
+    background-color: #84b09b !important; 
+    border-color: transparent !important; 
+    color: black !important; 
+    justify-content: center !important; 
+    margin: 10px !important;
+}
+
+.check:checked{
+    background-color: #84b09b;
+    border-color: #6bb692;
+    
+}
+.modal button {
+    /*Se modifica el diseño del boton del modal con css*/
+       background-color: #84b09b;
+       color: #000000;
+       font-size: 16px;
+       font-family: sans-serif;
+       border: none;
+       border-radius: 5px;
+       padding: 10px 20px;
+       cursor: pointer;
+}
+.modal {
+    background-color: #0096a728;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+   
+}
+p{
+  color: black;
+}
+i{
+  color: black;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	letter-spacing: 0.03em;
+	line-height: 2;
+  background-color: rgb(188, 216, 200);
+}
+.title{
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	margin-top: 525px;
+	font-weight: 525;
+}
+.container{
+	width: 100%;
+	max-width: 1200px;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+.menu{
+	width: 100%;
+	max-width: 1200px;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+.container .card{
+	width: 330px;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s;
+}
+.container .card:hover{
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container .card img{
+	width: 330px;
+	height: 220px;
+}
+.container .card h4{
+	font-weight: 600;
+}
+.container .card p{
+	padding: 0 1rem;
+	font-size: 15px;
+	font-weight: 300;
+}

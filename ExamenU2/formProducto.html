@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAPTURAR CLIENTE</title>
+
+<!-- ICONOS -->
+  <script src="https://kit.fontawesome.com/a8a964cfb5.js" crossorigin="anonymous"></script>
+  <!-- Librerias boostrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- hoja de estilos -->
+  <link href="estilos.css" rel="stylesheet">
+  </style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Menu de lado cliente -->
+    <div class="container-fluid">
+      <!-- Titulo del menu -->
+      <a class="navbar-brand" href="homeVendedor.html">VENDEDOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Apartado de los otros apartados -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Apartado de filtrado de categorias -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="vendedor.html">Listado de pedidos</a>
+          </li>
+          <!-- Menu de formulario de pedido -->
+          <li class="nav-item">
+            <a class="nav-link" href="formProducto.html">Agregar productos</a>
+          </li>
+          <!-- Menu de salir -->
+          <li class="nav-item">
+            <a class="nav-link" href="INDEX.HTML">Exit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- fin Menu de lado cliente -->
+
+  <!-- apartado de formulario  -->
+  <div class="wrapper">
+      <!-- Main content -->
+        <div class="container-fluid">
+          <div class="row" style="display: flex; justify-content: center; align-items: center;">
+            <!-- left column -->
+            <div class="col-md-6" style="max-height: 50vh">
+              <div class="bg-1">
+                <h1 class="t-stroke t-shadow">CAPTURAR PRODUCTOS</h1>
+              </div>
+              <br>
+              <!-- general form elements -->
+              <div class="card card-primary">
+                <!-- /.card-header -->
+                
+                <!-- form start -->
+                <form name="form1" method="post" action="">
+                  <div class="card-body">
+                    <!-- apartado de Ingresar id -->
+                    <div class="form-group" id="iddiv">
+                      <label for="id" style="text-align: center;">Ingrese el ID <span class="obligatorio">(*)</span></label>
+                      <input type="number" class="form-control m-2 input" name="id"  id="id" placeholder="Ingrese el ID" aria-describedby="datosw" required>
+                      <div id="datosw" class="invalid-feedback">
+                        Los datos son obligatorios
+                      </div>
+                    </div>
+                    <!-- apartado de Ingresar nombre -->
+                    <div class="form-group" id="nombrediv">
+                      <label for="nombre ">Nombre del producto<span class="obligatorio">(*)</span></label>
+                      <input type="text" class="form-control m-2 input" name="nombre"  id="nombre" placeholder="Ingrese el nombre" aria-describedby="datosw" required>
+                      <div id="datosw" class="invalid-feedback">
+                        Los datos son obligatorios
+                        </div>
+                    </div>
+                    
+                    <!-- apartado de Ingresar apellido -->
+                    <div class="form-group" id="descripciondiv">
+                      <label for="descripcion">Descripcion<span class="obligatorio">(*)</span></label>
+                      <input type="text" class="form-control m-2 input" name="descripcion"  id="descripcion" placeholder="Ingrese la descripcion" aria-describedby="datosw" required>
+                      <div id="datosw" class="invalid-feedback">
+                        Los datos son obligatorios
+                      </div>
+                    </div>
+                      <!-- apartado de Ingresar telefono -->
+
+                    <div class="form-group" id="preciodiv">
+                        <label for="precio">Precio<span class="obligatorio">(*)</span></label>
+                        <input type="number" class="form-control m-2 input" name="precio"  id="precio" placeholder="Ingrese el telefono" aria-describedby="datosw" required>
+                        <div id="datosw" class="invalid-feedback">
+                          Los datos son obligatorios
+                        </div>
+                      </div>
+                    
+                    <!-- apartado de Ingresar email -->
+
+                    <div class="form-group" id="capturadiv">
+                      <label for="exampleInputPassword1">Fecha de captura<span class="obligatorio">(*)</span></label>
+                      <input type="date" class="form-control m-2 input" name="captura"  id="captura" placeholder="Ingrese el correo" aria-describedby="datosw" required>
+                      <div id="datosw" class="invalid-feedback">
+                        Los datos son obligatorios
+                      </div>
+                    </div>
+                    <!-- apartado de Ingresar direccion-->
+
+                    <div class="form-group" id="notasdiv">
+                        <label for="notas">Notas<span class="obligatorio">(*)</span></label>
+                        <input type="text" class="form-control m-2 input" name="notas"  id="notas" placeholder="Ingrese su direccion" aria-describedby="datosw" required>
+                        <div id="datosw" class="invalid-feedback">
+                            Los datos son obligatorios
+                          </div>
+                    </div>
+                    </div>
+                       <!-- Apartado de botones de enviar y eliminar-->
+                  <div style="display: flex; justify-content: center; " > 
+                    <button type="button" id="botonEnviar" class="btn btn-primary botonForm" >Enviar</button>
+                    <button type="reset" class="btn btn-primary botonForm">Limpiar</button>
+                  </div>
+                  </div>
+                  <!-- se cierra el formulario -->
+                </form>
+              <!-- /.card -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- Modal -->  
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="myModal" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Datos Registrados</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Se ingresan los atributos del modal -->
+          <div class="modal-body">
+            <p id="modal-content"></p>
+            <p id="modalID"></p>
+            <p id="modalNombre"></p>
+            <p id="modaldescripcion"></p>
+            <p id="modalprecio"></p>
+            <p id="modalfecha"></p>
+            <p id="modalnotas"></p>
+            <div class="modal-footer">
+              <button type="button" class="btn boton" data-bs-dismiss="modal" id="aceptar">Aceptar</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  <!-- se agrega el archivo js -->
+  <script src="js/appformproductos.js"></script>
+
+</body>
+</html>

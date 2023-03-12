@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="estilos.css" rel="stylesheet">
+
+   <!-- Se agregan los archivos debootstrap -->
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color: rgb(188, 216, 200);">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Menu de lado cliente -->
+    <div class="container-fluid">
+      <!-- Titulo del menu -->
+      <a class="navbar-brand" href="homeVendedor.html">VENDEDOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Apartado de los otros apartados -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Apartado de filtrado de categorias -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="vendedor.html">Listado de pedidos</a>
+          </li>
+          <!-- Menu de formulario de pedido -->
+          <li class="nav-item">
+            <a class="nav-link" href="formProducto.html">Agregar productos</a>
+          </li>
+          <!-- Menu de salir -->
+          <li class="nav-item">
+            <a class="nav-link" href="INDEX.HTML">Exit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- fin Menu de lado cliente -->
+
+    <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-color: rgb(188, 216, 200);">
+    
+    <!-- se crea un div con clase wrapper -->
+    <div class="wrapper">
+      <!-- Main content -->
+        <div class="container-fluid">
+          <div class="row" style="display: flex; justify-content: center; align-items: center;">
+            <!-- left column -->
+            <div class="col-md-6" >
+              <!-- general form elements -->
+              <!-- titulo de la pagina -->
+              <div class="bg-1">
+                <h1 class="t-stroke t-shadow">PEDIDOS DE PRODUCTOS</h1>
+              </div>
+              <!-- din del titulo de la pagina -->
+              <br>
+              <!-- se crea un div donde se creara la tabla -->
+              <div class="card card-primary">
+                <!-- Inicio de la tabla -->
+                        <table id="example2" class="table table-bordered table-hover">
+                          <!-- Apartado de los titulos de la tabña -->
+                          <thead>
+                            <tr>
+                              <th>Usuario</th>
+                              <th>Nombre</th>
+                              <th>Nombre del producto</th>
+                              <th>Descripcion</th>
+                              <th>Precio</th>
+                              <th>Fecha estimada de entraga</th>
+                            </tr>
+                          </thead>
+                          <!-- Estructura de la tabla la cual se agrega con js -->
+                        <tbody class="tablaProductos">
+                        </tbody>
+                        <!-- fin de la tabla -->
+                        </table>
+                        <!-- boton de mostrar la informacion en la tabla -->
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+    <!-- Archivo JavaScript -->
+    <script src="js/appTablavendedor.js"></script>
+
+    
+</body>
+</html>
