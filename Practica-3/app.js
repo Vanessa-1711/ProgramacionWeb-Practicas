@@ -47,7 +47,7 @@ window.addEventListener("scroll", function(){
     //satup back to top link
 
     if(scrllHeight > 500){
-        console.log("helo");
+        console.log("hello");
         topLink.classList.add("show-link");
     }else{
         topLink.classList.remove("show-link");
@@ -85,34 +85,3 @@ scrollLinks.forEach((link) =>{
         linksContainer.style.height=0;
     });
 });
-
-// Scroll up
-
-document.getElementById("button-up").addEventListener("click", scrollUp);
-
-function scrollUp(){
-
-    var currentScroll = document.documentElement.scrollTop;
-
-    if (currentScroll > 0){
-        window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - (currentScroll / 10));
-    }
-}
-
-
-///
-
-buttonUp = document.getElementById("button-up");
-
-window.onscroll = function(){
-
-    var scroll = document.documentElement.scrollTop;
-
-    if (scroll > 500){
-        buttonUp.style.transform = "scale(1)";
-    }else if(scroll < 500){
-        buttonUp.style.transform = "scale(0)";
-    }
-
-}
