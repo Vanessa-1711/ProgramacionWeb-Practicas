@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	
+    <!-- styles -->
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <section class="section">
+    	<!--titulo-->
+      <div class="title">
+        <h2>UPV</h2>
+        <p>
+          Programación Web
+        </p>
+      </div>
+      <!--pestañas-->
+      <div class="about-center section-center">
+        <article class="about-img" id='about-img'>
+          <img src="img/ts-1.png" alt="img/ts-1.png" id="imagen" />
+        </article>
+        <article class="about">
+          <!-- botones de pestañas -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="portafolio">Portafolio</button>
+            <button class="tab-btn" data-id="nosotros">Nosotros</button>
+            <button class="tab-btn" data-id="objetivos">Objetivos</button>
+          </div>
+          <div class="about-content">
+            <!-- primer pestaña -->
+            <div class="content active" id="portafolio">
+              <h4>Portafolio</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!-- segunda pestaña-->
+            <div class="content" id="nosotros">
+              <h4>Nosotros</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!-- tercera pestaña -->
+            <div class="content" id="objetivos">
+              <h4>Objetivos</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!--galeria de imagenes-->
+        <article class="gallery">
+        	<a href="" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#myModal"><img  data-id="1" src="img/ts-1.png"></a>
+	       	<a href="" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#myModal"><img data-id="2"  src="img/ts-2.png"></a>
+	       	<a href="" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#myModal" ><img data-id="3" src="img/ts-3.png"></a>
+        </article>
+       	
+       	
+       	<!-- Modal -->
+		<div class="modal fade modal-xl" id="myModal" tabindex="-1" aria-labelledby="myModal" style="display: none;"  aria-hidden="true" >
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  
+		      </div>
+		      <div class="modal-body " >
+		        <!--carrusel-->
+				<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-inner" id="carrousel-inner">
+				    <!--contenido de carrusel-->
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+		       
+		      </div>
+		    </div>
+		  </div>
+		</div>
+    <!-- Modal -->
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</html>
