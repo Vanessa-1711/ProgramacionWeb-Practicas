@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="admin-lte/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="admin-lte/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="admin-lte/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="admin-lte/plugins/summernote/summernote-bs4.min.css">
+  <script src="https://kit.fontawesome.com/a8a964cfb5.js" crossorigin="anonymous"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--LOGIN -->
+  <link href="estilos.css" rel="stylesheet">
+  
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="dasboard.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
+
+
+ <!-- Main Sidebar Container -->
+ <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #9d8189;">
+  <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item menu-open">
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="dasboard.html" class="nav-link active">
+                  <i class="fa-solid fa-house"></i>
+                  <p>HOME</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+          </a>
+        </li>
+        <!-- Apartado del menu de usuario -->
+        <li class="nav-item">
+          <a href="usuarios.html" class="nav-link">
+            <i class="fa-sharp fa-solid fa-user"></i>
+            <p>
+              USUARIOS
+            </p>
+          </a>
+        </li>
+        <!-- fin Apartado del menu de usuario -->
+
+        <!-- Apartado del menu de productos -->
+        <li class="nav-item">
+          <a href="productos.html" class="nav-link">
+              <i class="fa-sharp fa-solid fa-box"></i>
+              <p>
+                  PRODUCTOS
+               </p>
+          </a>
+        </li>
+        <!-- fin Apartado del menu de productos -->
+
+        <!-- Apartado del menu de cateforias de productos -->
+        <li class="nav-item">
+          <a href="categoriaProductos.html" class="nav-link">
+              <i class="fa-solid fa-list"></i>
+              <p>
+                  CATEGORÍAS DE PRODUCTOS
+              </p>
+          </a>
+        </li>
+        <!-- fin Apartado del menu de categorias -->
+
+        <!-- Apartado del menu de Tabla de producto -->
+        <li class="nav-item">
+          <a href="tabla.html" class="nav-link">
+            <i class="fa-solid fa-table"></i>
+              <p>
+                  TABLA PRODUCTOS
+              </p>
+          </a>
+        </li>
+        <!-- fin Apartado del tabla de productos -->
+        <!-- Apartado del menu  -->
+        <li class="nav-item">
+          <a href="menu.html" class="nav-link">
+              <i class="fa-solid fa-tag"></i>
+              <p>
+                  MENU PRODUCTOS
+              </p>
+          </a>
+        </li>
+        <!-- fin Apartado menu -->
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+<!-- ./wrapper -->
+<div class="content-wrapper" style="background-color: #FFE5D9" >  
+     <!-- Se crea un carrusel con imagenes  -->
+     <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+          <!-- Imagen 1 -->
+        <div class="carousel-item active">            
+          <img src="https://www.nacionrex.com/__export/1621633745204/sites/debate/img/2021/05/21/kpop-fans-actividades-imperdibles_crop1621632073946.jpg_554688468.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 500px;">
+
+        </div>
+        <!-- Imagen 2 -->
+        <div class="carousel-item">
+          <img src="https://i0.wp.com/thehappening.com/wp-content/uploads/2021/11/sabrina-2021-11-16t020420293.jpg?fit=1440%2C700&ssl=1" class="d-block w-100" alt="..." style="width: 100%; height: 500px;">
+        </div>
+        <!-- Imagen 3 -->
+        <div class="carousel-item">
+          <img src="https://i0.wp.com/bemariekorea.com/wp-content/uploads/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Best-Korean-Moisturizer-For-Dry-Skin-2.png?fit=1920%2C1080&ssl=1" class="d-block w-100" alt="..." style="width: 100%; height: 500px;">
+        </div>
+      </div>
+      <!-- Flechas del carrusel hacia la izquierda -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- Flechas del carrusel hacia la derecha -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Fin carrusel  -->
+    <br>
+    <!--Tarjeta 1-->
+      <div class="container">
+
+          <div class="card">
+              <img src="https://i.pinimg.com/564x/9d/0b/99/9d0b99f2e3fea656f4db73eb4de77591.jpg">
+              <h1>Menu</h1>
+              <p>En este apartado se pueden visualizar los productos de la pagina.</p>
+              <a href="cliente.html" class="btn btn-primary botonForm">Go Menu</a>
+          </div>
+
+          <div class="card">
+              <img src="https://img.freepik.com/vector-gratis/recepcion-pedidos-telefono-centro-contacto-tienda-atencion-al-cliente-pedido-facil-entrega-rapida-servicio-comercial-personaje-dibujos-animados-operador-centro-llamadas_335657-2564.jpg?w=2000">
+              <h1>Pedidos de productos</h1>
+              <p>Los clientes pueden hacer pedido de productos</p>
+              <a href="formCliente.html" class="btn btn-primary botonForm">Go Pedidos</a>
+          </div>
+
+      </div>
+      <!--Termina tarjeta 1-->
+</body>
+</html>
