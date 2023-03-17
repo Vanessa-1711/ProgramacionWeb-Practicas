@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos</title>
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="admin-lte/dist/css/adminlte.min.css">
+  <link href="estilos.css" rel="stylesheet">
+  <!-- ICONOS -->
+  <script src="https://kit.fontawesome.com/a8a964cfb5.js" crossorigin="anonymous"></script>
+
+  <!-- Se agregan los archivos debootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- hoja de estilos -->
+  <link href="estilos.css" rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <!-- se crea un div donde se guardara todo el menu de la izquierda -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="dasboard.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index.html" class="nav-link">Exit</a>
+        </li>
+      </ul>
+  
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #9d8189;">
+      <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="dasboard.html" class="nav-link active">
+                      <i class="fa-solid fa-house"></i>
+                      <p>HOME</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+             <!-- apatado clientes -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active" style="background-color: aliceblue;">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  CLIENTE
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                   <!-- Apartado del menu de usuario -->
+                  <li class="nav-item ">
+                      <a href="usuarios.html" class="nav-link">
+                      <i class="fa-sharp fa-solid fa-user"></i>
+                      <p> USUARIOS</p>
+                      </a>
+                  </li>
+                   <!-- fin Apartado del menu de usuario -->
+                  <!-- Apartado del capturar cliente  -->
+                  <li class="nav-item">
+                      <a href="formClientes.html" class="nav-link">
+                          <i class="fa-sharp fa-solid fa-person"></i>
+                          <p>
+                              CAPTURAR CLIENTE
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin capturar cliente  -->
+                  <!-- Apartado del categoria cliente  -->
+                  <li class="nav-item">
+                      <a href="categoriaCliente.html" class="nav-link">
+                          <i class="fa-solid fa-list"></i>
+                          <p>
+                              CATEGORIA CLIENTE
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin categoria cliente  -->
+                  <!-- Apartado del tabla cliente  -->
+                  <li class="nav-item ">
+                      <a href="tablaClientes.html" class="nav-link">
+                          <i class="fa-sharp fa-solid fa-table-list"></i>
+                          <p>
+                              TABLA LISTADO DE CLIENTES
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin tabla cliente  -->
+              </ul>
+            </li>
+             <!-- fin apatado cliente -->
+  
+             <!-- apatado productos -->
+            <li class="nav-item">
+              <a href="#" class="nav-link active" style="background-color: aliceblue;">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  PRODUCTO
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <!-- Apartado del menu de productos -->
+                  <li class="nav-item">
+                      <a href="productos.html" class="nav-link">
+                          <i class="fa-sharp fa-solid fa-box"></i>
+                          <p>
+                              PRODUCTOS
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin Apartado del menu de productos -->
+                  <!-- Apartado del menu de catetorias de productos -->
+                  <li class="nav-item ">
+                      <a href="categoriaProductos.html" class="nav-link">
+                          <i class="fa-solid fa-list"></i>
+                          <p>
+                              CATEGORÍAS DE PRODUCTOS
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin Apartado del menu de categorias -->
+                  <!-- Apartado del menu de Tabla de producto -->
+                  <li class="nav-item">
+                      <a href="tabla.html" class="nav-link">
+                      <i class="fa-solid fa-table"></i>
+                          <p>
+                              TABLA PRODUCTOS
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin Apartado del tabla de productos -->
+                  <!-- Apartado del menu  -->
+                  <li class="nav-item">
+                      <a href="menu.html" class="nav-link">
+                          <i class="fa-solid fa-tag"></i>
+                          <p>
+                              MENU PRODUCTOS
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin Apartado menu -->
+  
+  
+              </ul>
+            </li>
+             <!-- apatado productos -->
+
+             <!-- apatado proveedor -->
+            <li class="nav-item">
+              <a href="#" class="nav-link active" style="background-color: aliceblue;">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  PROVEEDORES
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <!-- Apartado del captura de proveedores  -->
+                  <li class="nav-item">
+                      <a href="formProvedores.html" class="nav-link">
+                          <i class="fa-sharp fa-solid fa-truck-fast"></i>
+                          <p>
+                              CAPTURA DE PROVEEDORES
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin captura proveedores  -->
+                  <!-- Apartado del tabla proveedor  -->
+                  <li class="nav-item">
+                      <a href="tablaProveedores.html" class="nav-link">
+                          <i class="fa-sharp fa-solid fa-table"></i>
+                          <p>
+                              TABLA LISTADO DE PROVEEDORES
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin tabla proveedor  -->
+              </ul>
+            </li>
+            <!-- fin apatado proveedor -->
+            
+
+            <!-- Apartado de curriculum  -->
+            <li class="nav-item">
+              <a href="#" class="nav-link active" style="background-color: aliceblue;">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  CURRICULUM
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <!-- Apartado de curriculum  -->
+                  <li class="nav-item">
+                      <a href="formularioCurriculum.html" class="nav-link">
+                          <i class="fa-sharp fa-solid fa-file"></i>
+                          <p>
+                              GENERAR CURRICULUM
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin curriculum  -->
+              </ul>
+            </li>
+            <!-- fin de curriculum  -->
+
+
+
+
+            <li class="nav-item">
+              <a href="#" class="nav-link active" style="background-color: aliceblue;">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  PRACTICAS
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                  <!-- Apartado del captura de proveedores  -->
+                  <li class="nav-item">
+                      <a href="https://fingerprints-vet.me/practica2/" target="_blank" class="nav-link">
+                          <i class="fa-light fa-file-code"></i>
+                          <p>
+                              PRACTICA 2-NUBIA
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin captura proveedores  -->
+                  <!-- Apartado del tabla proveedor  -->
+                  <li class="nav-item">
+                    <a href="http://vanessagarcia.me/PracticaGallery/" target="_blank" class="nav-link">
+                          <i class="fa-solid fa-browser"></i>
+                          <p>
+                              PRACTICA-GALLERIA
+                          </p>
+                      </a>
+                  </li>
+                  <!-- fin tabla proveedor  -->
+                  <!-- Apartado del tabla proveedor  -->
+                  <li class="nav-item">
+                    <a href="http://vanessagarcia.me/Practica-3/" target="_blank" class="nav-link">
+                      <i class="fa-sharp fa-regular fa-browser"></i>
+                        <p>
+                            PRACTICA-ONE-PAGE
+                        </p>
+                    </a>
+                </li>
+                <!-- fin tabla proveedor  -->
+              </ul>
+            </li>
+  
+  
+        </nav>
+        <!-- /terina el .sidebar-menu -->
+      </div>
+      <!-- termina el /.sidebar -->
+    </aside>
+  </div>
+    <!-- se cierra el div de ./wrapper -->
+  <!-- ./wrapper -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-color: #FFE5D9">
+    
+      <!-- se crea un div con clase wrapper -->
+      <div class="wrapper">
+        <!-- Main content -->
+          <div class="container-fluid">
+            <div class="row" style="display: flex; justify-content: center; align-items: center;">
+              <!-- left column -->
+              <div class="col-md-6 tablas" >
+                <!-- general form elements -->
+                <!-- titulo de la pagina -->
+                <div class="bg-1">
+                  <h1 class="t-stroke t-shadow">TABLA LISTADO DE CLIENTES</h1>
+                </div>
+                <!-- din del titulo de la pagina -->
+                <br>
+                <!-- se crea un div donde se creara la tabla -->
+                <div class="card card-primary">
+                  <!-- Inicio de la tabla -->
+                          <table id="example2" class="table table-bordered table-hover">
+                            <!-- Apartado de los titulos de la tabña -->
+                            <thead>
+                              <tr>
+                                <th>Id</th>
+                                <th>Nombre</th>
+                                <th>Apellido Paterno</th>
+                                <th>Apellido Materno</th>
+                                <th>Telefono</th>
+                                <th>Email</th>
+                                <th>Direccion</th>
+                                <th>RFC</th>
+                                <th>Categoria</th>
+                              </tr>
+                            </thead>
+                            <!-- Estructura de la tabla la cual se agrega con js -->
+                          <tbody class="tablaClientes">
+                          </tbody>
+                          <!-- fin de la tabla -->
+                          </table>
+                          <!-- boton de mostrar la informacion en la tabla -->
+                      </div>
+                      <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+
+                  </div>
+                  <!-- /.card-body -->
+              </div>
+              <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+  </div>
+  <!-- se llama al archivo js -->
+  <script src="js/appTablaCliente.js"></script>
+
+  <!-- se llama al archivo js -->
+  <script src="js/appCategoriaCliente.js"></script>
+   <!-- jQuery -->
+   <script src="admin-lte/plugins/jquery/jquery.min.js"></script>
+   <!-- AdminLTE App -->
+   <script src="admin-lte/dist/js/adminlte.js"></script>
+   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+   <script src="admin-lte/dist/js/pages/dashboard.js"></script>
+
+
+</body>
+</html>

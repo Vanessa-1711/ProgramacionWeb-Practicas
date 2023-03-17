@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum</title>
+
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="admin-lte/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="admin-lte/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="admin-lte/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="admin-lte/plugins/summernote/summernote-bs4.min.css">
+  <script src="https://kit.fontawesome.com/a8a964cfb5.js" crossorigin="anonymous"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--LOGIN -->
+  <link href="estilos.css" rel="stylesheet">
+  
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="dasboard.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Exit</a>
+      </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
+
+
+  <!-- Main Sidebar Container -->
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #9d8189;">
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+              with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="dasboard.html" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <p>HOME</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active" style="background-color: aliceblue;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                CLIENTE
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+                 <!-- Apartado del menu de usuario -->
+                <li class="nav-item ">
+                    <a href="usuarios.html" class="nav-link">
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                    <p> USUARIOS</p>
+                    </a>
+                </li>
+                 <!-- fin Apartado del menu de usuario -->
+                <!-- Apartado del capturar cliente  -->
+                <li class="nav-item">
+                    <a href="formClientes.html" class="nav-link">
+                        <i class="fa-sharp fa-solid fa-person"></i>
+                        <p>
+                            CAPTURAR CLIENTE
+                        </p>
+                    </a>
+                </li>
+                <!-- fin capturar cliente  -->
+                <!-- Apartado del categoria cliente  -->
+                <li class="nav-item">
+                    <a href="categoriaCliente.html" class="nav-link">
+                        <i class="fa-solid fa-list"></i>
+                        <p>
+                            CATEGORIA CLIENTE
+                        </p>
+                    </a>
+                </li>
+                <!-- fin categoria cliente  -->
+                <!-- Apartado del tabla cliente  -->
+                <li class="nav-item ">
+                    <a href="tablaClientes.html" class="nav-link">
+                        <i class="fa-sharp fa-solid fa-table-list"></i>
+                        <p>
+                            TABLA LISTADO DE CLIENTES
+                        </p>
+                    </a>
+                </li>
+                <!-- fin tabla cliente  -->
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link active" style="background-color: aliceblue;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                PRODUCTO
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <!-- Apartado del menu de productos -->
+                <li class="nav-item">
+                    <a href="productos.html" class="nav-link">
+                        <i class="fa-sharp fa-solid fa-box"></i>
+                        <p>
+                            PRODUCTOS
+                        </p>
+                    </a>
+                </li>
+                <!-- fin Apartado del menu de productos -->
+                <!-- Apartado del menu de cateforias de productos -->
+                <li class="nav-item ">
+                    <a href="categoriaProductos.html" class="nav-link">
+                        <i class="fa-solid fa-list"></i>
+                        <p>
+                            CATEGORÍAS DE PRODUCTOS
+                        </p>
+                    </a>
+                </li>
+                <!-- fin Apartado del menu de categorias -->
+                <!-- Apartado del menu de Tabla de producto -->
+                <li class="nav-item">
+                    <a href="tabla.html" class="nav-link">
+                    <i class="fa-solid fa-table"></i>
+                        <p>
+                            TABLA PRODUCTOS
+                        </p>
+                    </a>
+                </li>
+                <!-- fin Apartado del tabla de productos -->
+                <!-- Apartado del menu  -->
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">
+                        <i class="fa-solid fa-tag"></i>
+                        <p>
+                            MENU PRODUCTOS
+                        </p>
+                    </a>
+                </li>
+                <!-- fin Apartado menu -->
+
+
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+            <a href="#" class="nav-link active" style="background-color: aliceblue;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                PROVEEDORES
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <!-- Apartado del captura de proveedores  -->
+                <li class="nav-item">
+                    <a href="formProvedores.html" class="nav-link">
+                        <i class="fa-sharp fa-solid fa-truck-fast"></i>
+                        <p>
+                            CAPTURA DE PROVEEDORES
+                        </p>
+                    </a>
+                </li>
+                <!-- fin captura proveedores  -->
+                <!-- Apartado del tabla proveedor  -->
+                <li class="nav-item">
+                    <a href="tablaProveedores.html" class="nav-link">
+                        <i class="fa-sharp fa-solid fa-table"></i>
+                        <p>
+                            TABLA LISTADO DE PROVEEDORES
+                        </p>
+                    </a>
+                </li>
+                <!-- fin tabla proveedor  -->
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link active" style="background-color: aliceblue;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                PRACTICAS
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <!-- Apartado del captura de proveedores  -->
+                <li class="nav-item">
+                    <a href="https://fingerprints-vet.me/practica2/" target="_blank" class="nav-link">
+                        <i class="fa-light fa-file-code"></i>
+                        <p>
+                            PRACTICA 2-NUBIA
+                        </p>
+                    </a>
+                </li>
+                <!-- fin captura proveedores  -->
+                <!-- Apartado del tabla proveedor  -->
+                <li class="nav-item">
+                  <a href="http://vanessagarcia.me/PracticaGallery/" target="_blank" class="nav-link">
+                        <i class="fa-solid fa-browser"></i>
+                        <p>
+                            PRACTICA-GALLERIA
+                        </p>
+                    </a>
+                </li>
+                <!-- fin tabla proveedor  -->
+                <!-- Apartado del tabla proveedor  -->
+                <li class="nav-item">
+                  <a href="http://vanessagarcia.me/Practica-3/" target="_blank" class="nav-link">
+                    <i class="fa-sharp fa-regular fa-browser"></i>
+                      <p>
+                          PRACTICA-ONE-PAGE-VANESSA
+                      </p>
+                  </a>
+              </li>
+              <!-- fin tabla proveedor  -->
+
+                <!-- Apartado del tabla proveedor  -->
+                    <li class="nav-item">
+                        <a href="https://fingerprints-vet.me/practica3/" target="_blank" class="nav-link">
+                            <i class="fa-sharp fa-regular fa-browser"></i>
+                            <p>PRACTICA-ONE-PAGE-NUBIA</p>
+                        </a>
+                    </li>
+                <!-- fin tabla proveedor  -->
+            </ul>
+          </li>
+
+          <!-- Apartado de curriculum  -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active" style="background-color: aliceblue;">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                CURRICULUM
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <!-- Apartado de curriculum  -->
+                <li class="nav-item">
+                    <a href="formularioCurriculum.html" class="nav-link">
+                        <i class="fa-sharp fa-solid fa-file"></i>
+                        <p>
+                            GENERAR CURRICULUM
+                        </p>
+                    </a>
+                </li>
+                <!-- fin curriculum  -->
+            </ul>
+          </li>
+          <!-- fin de curriculum  -->
+
+
+      </nav>
+      <!-- /terina el .sidebar-menu -->
+    </div>
+    <!-- termina el /.sidebar -->
+  </aside>
+  <!-- se cierra el div de ./wrapper -->
+  <div class="container-fluid ">
+    <div class="row justify-content-center">
+      <div class="col-md-2"></div>
+      <div class="col-md-9 mt-3" >
+        <div class="bg-1">
+          <h1 class="t-stroke t-shadow">FORMULARIO CURRICULUM</h1>
+        </div>
+        <div class="card">
+            <div class="" >
+              <div class="card-body ">
+                <!-- form start -->
+                <form name="form1" id="form1" method="POST" action="">
+                  <div class="form-group m-2">
+                    <!--datos iniciales-->
+                    <div id="inicio">
+                      <!--puesto-->
+                      <label for="puesto">Puesto que esta solicitando  <span class="obligatorio">(*)</span></label>
+                      <input type="text" class="form-control m-2 input" name="puesto" id="puesto" placeholder="Puesto" aria-describedby="datosinicio" required>
+                      <!--fecha-->
+                      <label for="fecha">Fecha  <span class="obligatorio">(*)</span></label>
+                      <input type="date" class="form-control m-2 input" name="fecha" id="fecha" placeholder="fecha" aria-describedby="datosinicio" required>
+                      <!--sueldo-->
+                      <label for="sueldo">Sueldo mensual deseado  <span class="obligatorio">(*)</span></label>
+                      <input type="number" class="form-control m-2 input" name="sueldo" id="sueldo" placeholder="Sueldo" aria-describedby="datosinicio" required>
+                      <div id="datosinicio" class="invalid-feedback">
+                      Los datos son obligatorios
+                      </div>
+                    </div>
+
+                    <!--datos personales-->
+                    <p class="text-center fw-bold fs-3">
+                      Datos personales
+                    </p>
+                    <div id="datosp">
+                      <div class="row">
+                        <div class="col-4">
+                          <!--Apellidos-->
+                          <label for="apellidoP">Primer Apellido<span class="obligatorio">(*)</span></label>
+                          <input type="text" class="form-control m-2 input" name="apellidoP" id="apellidoP" placeholder="Apellido Paterno" aria-describedby="datosw" required>
+                        </div>
+                        <div class="col-4">
+                          <label for="apellidoM">Segundo Apellido</label>
+                          <input type="text" class="form-control m-2 input" name="apellidoM" id="apellidoM" placeholder="Apellido Materno" aria-describedby="datosw" >
+                        </div>
+                        <div class="col-4">
+                          <!--Nombre-->
+                          <label for="nombre">Nombre(s)  <span class="obligatorio">(*)</span></label>
+                          <input type="text" class="form-control m-2 input" name="nombre" id="nombre" placeholder="Nombre" aria-describedby="datosw" required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!--Fecha de nacimiento-->
+                        <div class="col-4">
+                          <label for="fecha_nac">Fecha de nacimiento<span class="obligatorio">(*)</span></label>
+                          <input type="date" class="form-control m-2 input" name="fecha_nac" id="fecha_nac" placeholder="Fecha de nacimiento" aria-describedby="datosw" required>
+                        </div>
+                        <!--Edad-->
+                        <div class="col-4">
+                          <label for="edad">Edad</label>
+                          <input type="number" class="form-control m-2 input" name="edad" id="edad" placeholder="Edad" aria-describedby="datosw" required>
+                        </div>
+                        <!--Sexo-->
+                        <div class="col-4">
+                          <label for="sexo">Sexo <span class="obligatorio">(*)</span></label>
+                          <select class="form-select m-2 input" name="sexo" id="sexo" aria-describedby="datosw" required>
+                            <option selected>Elige...</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Prefiero no decir</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-4">
+                          <!--Nacionalidad-->
+                          <label for="nacionalidad">Nacionalidad <span class="obligatorio">(*)</span></label>
+                          <input type="text" class="form-control m-2 input" name="nacionalidad" id="nacionalidad" placeholder="Nacionalidad" aria-describedby="datosw" required>
+                        </div>
+                        <div class="col-4">
+                          <!--Estado Civil-->
+                          <label for="estado_civil">Estado Civil <span class="obligatorio">(*)</span></label>
+                          <input type="text" class="form-control m-2 input" name="estado_civil" id="estado_civil" placeholder="Colonia" aria-describedby="datosw" required>
+                        </div>
+                        <div class="col-4">
+                          <!--Telefono-->
+                          <label for="telefono">Teléfono o Celular</label>
+                          <input type="number" class="form-control m-2 input" name="telefono" id="telefono" placeholder="Código Postal" aria-describedby="datosw">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-4">
+                          <!--Domicilio-->
+                          <label for="domicilio">Domicilio</label>
+                          <input type="text" class="form-control m-2 input" name="domicilio" id="domicilio" placeholder="Calle y número" aria-describedby="datosw">
+                        </div>
+                        <div class="col-4">
+                          <!--Colonia-->
+                          <label for="colonia">Colonia</label>
+                          <input type="text" class="form-control m-2 input" name="colonia" id="colonia" placeholder="Colonia" aria-describedby="datosw" >
+                        </div>
+                        <div class="col-4">
+                          <!--Codigo postal-->
+                          <label for="codigo_postal">Código postal</label>
+                          <input type="number" class="form-control m-2 input" name="codigo_postal" id="codigo_postal" placeholder="Código Postal" aria-describedby="datosw">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <!--Ciudad de domicilio-->
+                          <label for="ciudad_dom">Entidad Federativa del domicilio <span class="obligatorio">(*)</span></label>
+                          <input type="text" class="form-control m-2 input" name="ciudad_dom" id="ciudad_dom" placeholder="Ciudad o Alcaldía" aria-describedby="datosw" required>
+                        </div>
+                        <div class="col-6">
+                          <!--Ciudad de nacimiento-->
+                          <label for="ciudad_nac">Entidad Federativa de nacimiento</label>
+                          <input type="text" class="form-control m-2 input" name="ciudad_nac" id="ciudad_nac" placeholder="Ciudad o Alcaldía" aria-describedby="datosw" >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <!--vive con-->
+                          <label for="vive">Vive con </span></label>
+                          <input type="text" class="form-control m-2 input" name="vive" id="vive" placeholder="Padres, familia, parientes" aria-describedby="datosw" >
+                        </div>
+                        <div class="col-6">
+                          <!--Personas que dependen de usted-->
+                          <label for="dependientes">Personas que dependen de usted</label>
+                          <input type="text" class="form-control m-2 input" name="dependientes" id="dependientes" placeholder="Hijos, Conyuge, Padres" aria-describedby="datosw" >
+                        </div>
+                      </div>
+                      <div id="datosw" class="invalid-feedback">
+                      Los datos personales con * son obligatorios
+                      </div>
+                    </div>
+                    
+                    <!--documentacion-->
+                    <p class="text-center fw-bold fs-3">
+                      Documentación
+                    </p>
+                    <div id="documentacion">
+                      <div class="row">
+                        <div class="col-4">
+                          <!--CURP-->
+                          <label for="curp">CURP<span class="obligatorio">(*)</span></label>
+                          <input type="text" class="form-control m-2 input" name="curp" id="curp" placeholder="CURP" aria-describedby="documentacionn" max="18" min="18" required>
+                        </div>
+                        <div class="col-4">
+                          <!--RFC-->
+                          <label for="rfc">RFC <span class="obligatorio">(*)</span></label>
+                          <input type="text" class="form-control m-2 input" name="rfc" id="rfc" placeholder="Apellido Materno" aria-describedby="documentacionn" max="13" min="13" required="">
+                        </div>
+                        <div class="col-4">
+                          <!--Afore-->
+                          <label for="afore">Número de Afore </label>
+                          <input type="number" class="form-control m-2 input" name="afore" id="afore" placeholder="No. de Afore" aria-describedby="documentacionn" >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!--Licencia de Manejo-->
+                        <div class="col-4">
+                          <label for="licencia">¿Tiene Licencia de Manejo?<span class="obligatorio">(*)</span></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="licencia" id="licenciaS">
+                            <label class="form-check-label" for="licenciaS">
+                              Si
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="licencia" id="licenciaN" checked>
+                            <label class="form-check-label" for="licenciaN">
+                              No
+                            </label>
+                          </div>
+                        </div>
+                        <!--Cartilla Servicio Militar-->
+                        <div class="col-4">
+                          <label for="servicio_militar">Número de Cartilla de Servicio Militar</label>
+                          <input type="number" class="form-control m-2 input" name="servicio_militar" id="servicio_militar" placeholder="No. de Cartilla de Servicio Militar" aria-describedby="documentacionn">
+                        </div>
+                        <!--No de Pasaporte-->
+                        <div class="col-4">
+                          <label for="pasaporte">Número de <br> Pasaporte</label>
+                          <input type="number" class="form-control m-2 input" name="pasaporte" id="pasaporte" placeholder="No. de Pasaporte" aria-describedby="documentacionn">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <!--NSS-->
+                          <label for="nss">Número de Seguridad Social</label>
+                          <input type="number" class="form-control m-2 input" name="nss" id="nss" placeholder="NSS" aria-describedby="documentacionn">
+                        </div>
+                        <div class="col-6">
+                          <!--No. licencia-->
+                          <label for="nlicencia">Clase y número de licencia </label>
+                          <input type="text" class="form-control m-2 input" name="nlicencia" id="nlicencia" placeholder="No. de Licencia y Clase" aria-describedby="documentacionn">
+                        </div>
+                      </div>
+                      <!--Documentacion Extranjero-->
+                      <label for="extranjero">Siendo extranjero que documentos le permite trabajar en el país</label>
+                      <input type="text" class="form-control m-2 input" name="extranjero" id="extranjero" placeholder="Clase y documentación" aria-describedby="documentacionn">
+                      <div id="documentacionn" class="invalid-feedback">
+                      Los datos de documentación con * son obligatorios
+                      </div>
+                    </div>
+
+                    <!--Estado de Salud y Hábitos Personales-->
+                    <p class="text-center fw-bold fs-3">
+                      Estado de Salud y Hábitos Personales
+                    </p>
+                    <div id="salud">
+                      <div class="row">
+                        <div class="col-4">
+                          <!--estado de salud-->
+                          <label for="salud">¿Cómo considera su estado de salud actual? <span class="obligatorio">(*)</span></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="saludB" aria-describedby="saludd" required>
+                            <label class="form-check-label" for="saludB">
+                              Buena
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="saludR" aria-describedby="saludd" checked>
+                            <label class="form-check-label" for="saludR">
+                              Regular
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salud" id="saludM" aria-describedby="saludd" checked>
+                            <label class="form-check-label" for="saludM">
+                              Malo
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <!--Enfermedad Crónica-->
+                          <label for="cronica">Padece alguna enfermedad crónica <span class="obligatorio">(*)</span></label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cronica" id="cronicaS"aria-describedby="saludd" required>
+                            <label class="form-check-label" for="cronicaS">
+                              Si
+                            </label>
+                            <br>
+                            <label for="cronica">Cuál? <span class="obligatorio">(*)</span></label>
+                            <input class="form-control input" type="text" name="cronicaCual" id="cronica" aria-describedby="saludd" required>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cronica" id="cronicaN" aria-describedby="saludd" checked>
+                            <label class="form-check-label" for="cronicaN">
+                              No
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <!--deportes-->
+                          <label for="deportes">¿Practica usted algún deporte?</label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="deportes" id="deportesS" aria-describedby="saludd" required>
+                            <label class="form-check-label" for="deportesS">
+                              Si
+                            </label>
+                            <br>
+                            <label for="deportes">Cuál? <span class="obligatorio">(*)</span></label>
+                            <input class="form-control input" type="text" name="deportesCual" id="deportes"aria-describedby="saludd" required>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="deportes" id="deportesN" aria-describedby="saludd" checked>
+                            <label class="form-check-label" for="deportesN">
+                              No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!--Club Social-->
+                          <label for="club">¿Pertenece a algún Club Social o Deportivo? </label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="club" id="clubS" aria-describedby="saludd" required>
+                            <label class="form-check-label" for="clubS">
+                              Si
+                            </label>
+                            <br>
+                            <label for="club">Cuál? </label>
+                            <input class="form-control input" type="text" name="clubCual" id="clubCual" aria-describedby="saludd" required>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="club" id="clubN" aria-describedby="saludd" checked>
+                            <label class="form-check-label" for="clubN">
+                              No
+                            </label>
+                          </div>
+                        </div>
+                      <!--Tiempo Libre-->
+                      <label for="tiempo_libre">¿En qué ocupa su tiempo libre?</label>
+                      <input type="text" class="form-control m-2 input" name="tiempo_libre" id="tiempo_libre" placeholder="Tiempo LIbre" aria-describedby="saludd">
+                      <!--Meta-->
+                      <label for="meta">¿Cuál es su meta en la vida?</label>
+                      <input type="text" class="form-control m-2 input" name="meta" id="meta" placeholder="Meta" aria-describedby="saludd">
+                      
+                      <div id="saludd" class="invalid-feedback">
+                      Los datos de salud con * son obligatorios
+                      </div>
+                    </div>
+
+                    <!--Datos Familiares-->
+                    <p class="text-center fw-bold fs-3">
+                      Datos Familiares
+                    </p>
+                    <p class="fs-5 text-center fw-semibold">Padre</p>
+                    <div id="datosf">
+                      <div class="row">
+                        <div class="col-3">
+                          <!--Nombre padre-->
+                          <label for="nombrep">Nombre </label>
+                          <input type="text" class="form-control input" name="nombrep" id="nombrep" placeholder="Sin apellidos" aria-describedby="familia">
+                        </div>  
+                        <!--Vive o no padre-->
+                        <div class="col-2">
+                          <label for="viveP">Vive? </label>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="viveP" id="vivePS" aria-describedby="familia" >
+                            <label class="form-check-label" for="vivePS">
+                              Si
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="viveP" id="vivePS" aria-describedby="familia" checked>
+                            <label class="form-check-label" for="vivePN">
+                              No
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <!--domicilio padre-->
+                          <label for="dom_entidad_p">Domicilio</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="Entidad Federativa" aria-describedby="familia" required>
+                          <input class="form-control input" type="text" name="dom_col_p" id="dom_col_p" placeholder="Colonia" aria-describedby="familia" required>
+                          
+                        </div>
+                        <div class="col-3">
+                          <!--ocupacion madre-->
+                          <label for="ocupacion_p">Ocupación</label>
+                          <input class="form-control input" type="text" name="ocupacion_p" id="ocupacion_p" placeholder="Ocupación" aria-describedby="familia" required>
+                          
+                        </div>
+                      </div>
+                      <br>
+                      <div class="linea"></div>
+
+                    <div class="row">
+                      <p class="fs-5 text-center fw-semibold" style="background-color: #c3aab1; ">Madre</p>
+                      <div class="col-3">
+                        <!--Nombre Madre-->
+                        <label for="nombrem">Nombre </label>
+                        <input type="text" class="form-control input" name="nombrem" id="nombrem" placeholder="Sin apellidos" aria-describedby="familia" required>
+                      </div>  
+                      <!--Vive o no madre-->
+                      <div class="col-2">
+                        <label for="viveM">Vive? </label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="viveM" id="viveMS" aria-describedby="familia" >
+                          <label class="form-check-label" for="viveMS">
+                            Si
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="viveM" id="viveMN" aria-describedby="familia" checked>
+                          <label class="form-check-label" for="viveMN">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <!--domicilio madre-->
+                        <label for="dom_entidad_m">Domicilio</label>
+                        <input class="form-control input mb-1" type="text" name="dom_entidad_m" id="dom_entidad_m" placeholder="Entidad Federativa" aria-describedby="familia">
+                        <input class="form-control input" type="text" name="dom_col_m" id="dom_col_m" placeholder="Colonia" aria-describedby="familia" required>
+                        
+                      </div>
+                      <div class="col-3">
+                        <!--ocupacion madre-->
+                        <label for="ocupacion_m">Ocupación</label>
+                        <input class="form-control input" type="text" name="ocupacion_m" id="ocupacion_m" placeholder="Ocupación" aria-describedby="familia" required>
+                        
+                      </div>
+                    </div>
+                    <br>
+                    <div class="linea"></div>
+                    <div class="row">
+                      <p class="fs-5 text-center fw-semibold">Esposo(a)</p>
+                      <div class="col-3">
+                        <!--Nombre esposo-->
+                        <label for="nombree">Nombre </label>
+                        <input type="text" class="form-control input" name="nombree" id="nombree" placeholder="Sin apellidos" aria-describedby="familia" required>
+                      </div>  
+                      <!--Vive o no esposo-->
+                      <div class="col-2">
+                        <label for="viveE">Vive? </label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="viveE" id="viveES" aria-describedby="familia">
+                          <label class="form-check-label" for="viveES">
+                            Si
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="viveE" id="viveEN" aria-describedby="familia" checked>
+                          <label class="form-check-label" for="viveEN">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <!--domicilio esposo-->
+                        <label for="dom_entidad_e">Domicilio</label>
+                        <input class="form-control input mb-1" type="text" name="dom_entidad_e" id="dom_entidad_e" placeholder="Entidad Federativa">
+                        <input class="form-control input" type="text" name="dom_col_e" id="dom_col_e" placeholder="Colonia" aria-describedby="familia" required>
+                        
+                      </div>
+                      <div class="col-3">
+                        <!--ocupacion esposo-->
+                        <label for="ocupacion_e">Ocupación</label>
+                        <input class="form-control input" type="text" name="ocupacion_e" id="ocupacion_e" placeholder="Ocupación" aria-describedby="familia" required>
+                        
+                      </div>
+                    </div>
+                    <br>
+                    <div class="linea"></div>
+                    <div class="row">
+                      <!--Hijos-->
+                      <p class="fs-5 text-center fw-semibold">Hijos</p>
+                      <div class="col-6">
+                        <!--Nombre hijos-->
+                        <label for="nombreh">Nombre(s) </label>
+                        <input type="text" class="form-control input" name="nombreh" id="nombreh" aria-describedby="familia" required>
+                      </div>  
+                      <div class="col-6">
+                        <!--edad hijos-->
+                        <label for="edadh">Edad(es) </label>
+                        <input type="text" class="form-control input" name="edadh" id="edadh" aria-describedby="familia" required>
+                      </div>  
+                      <div id="familia" class="invalid-feedback">
+                      Los datos de salud con * son obligatorios
+                      </div>
+                    </div>
+
+                    <!--Escolaridad-->
+                    <p class="text-center fw-bold fs-3">
+                      Escolaridad
+                    </p>
+                    <p class="fs-5 text-center fw-semibold">Primaria</p>
+                    <div id="datosE">
+                      <div class="row">
+                        <div class="col-3">
+                          <!--Nombre primaria-->
+                          <label for="nombreprim">Nombre </label>
+                          <input type="text" class="form-control input" name="nombreprim" id="nombreprim" placeholder="Nombre" aria-describedby="escolaridadd" required>
+                        </div>  
+                        <div class="col-3">
+                          <!--domicilio primaria-->
+                          <label for="dom_primaria">Domicilio</label>
+                          <input class="form-control input mb-1" type="text" name="dom_primaria" id="dom_primaria" placeholder="Entidad Federativa" aria-describedby="escolaridadd" required>
+                          <input class="form-control input" type="text" name="col_primaria" id="col_primaria" placeholder="Colonia" aria-describedby="escolaridadd" required>
+                        </div>
+                        <div class="col-2">
+                          <!--fechas primaria-->
+                          <label for="fechaDe">Fechas</label>
+                          <input class="form-control input mb-1" type="text" name="fechaDe" id="fechaDe" placeholder="De" aria-describedby="escolaridadd" required>
+                          <input class="form-control input" type="text" name="fechaA" id="fechaA" placeholder="A" aria-describedby="escolaridadd" required>
+                        </div>
+                        <div class="col-2">
+                          <!--años primaria-->
+                          <label for="aniosprim">Años</label>
+                          <input class="form-control input" type="number" name="aniosprim" id="aniosprim" placeholder="Años" aria-describedby="escolaridadd" required>
+                        </div>
+                        <div class="col-2">
+                          <!--titulo primaria-->
+                          <label for="titulo_prim">Titulo Recibido</label>
+                          <input class="form-control input" type="number" name="titulo_prim" id="titulo_prim" placeholder="Titulo" aria-describedby="escolaridadd" required>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="linea"></div>
+                    <p class="fs-5 text-center fw-semibold">Secundaria</p>
+                    <div id="datosf">
+                      <div class="row">
+                        <div class="col-3">
+                          <!--Nombre secundaria-->
+                          <label for="nombres">Nombre </label>
+                          <input type="text" class="form-control input" name="nombres" id="nombres" placeholder="Nombre" aria-describedby="escolaridadd" required>
+                        </div>  
+                        <div class="col-3">
+                          <!--domicilio secundaria-->
+                          <label for="dom_secundaria">Domicilio</label>
+                          <input class="form-control input mb-1" type="text" name="dom_secundaria" id="dom_secundaria" placeholder="Entidad Federativa" aria-describedby="escolaridadd" required>
+                          <input class="form-control input" type="text" name="col_secundaria" id="col_secundaria" placeholder="Colonia" aria-describedby="escolaridadd" required>
+                        </div>
+                        <div class="col-2">
+                          <!--fechas secundaria-->
+                          <label for="fecha_sec_De">Fechas</label>
+                          <input class="form-control input mb-1" type="text" name="fecha_sec_De" id="fecha_sec_De" placeholder="De" aria-describedby="escolaridadd" required>
+                          <input class="form-control input" type="text" name="fecha_sec_A" id="fecha_sec_A" placeholder="A" aria-describedby="escolaridadd" required>
+                        </div>
+                        <div class="col-2">
+                          <!--años secundaria-->
+                          <label for="aniossec">Años</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Años" aria-describedby="escolaridadd" required>
+                        </div>
+                        <div class="col-2">
+                          <!--titulo secundaria-->
+                          <label for="titulo_sec">Titulo Recibido</label>
+                          <input class="form-control input" type="number" name="titulo_sec" id="titulo_sec" placeholder="Titulo" aria-describedby="escolaridadd" required>
+                        </div>
+                      </div>
+                    </div>
+                    <!--aqui-->
+                    <br>
+                    <div class="linea"></div>
+                    <p class="fs-5 text-center fw-semibold">Preparatoria</p>
+                    <div id="datosf">
+                      <div class="row">
+                        <div class="col-3">
+                          <!--Nombre Preparatoria-->
+                          <label for="nombrep">Nombre </label>
+                          <input type="text" class="form-control input" name="nombrep" id="nombrep" placeholder="Nombre" aria-describedby="documentacionn">
+                        </div>  
+                        <div class="col-3">
+                          <!--domicilio Preparatoria-->
+                          <label for="entidad">Domicilio</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="Entidad Federativa">
+                          <input class="form-control input" type="text" name="dom_col_o" id="dom_col_o" placeholder="Colonia">
+                        </div>
+                        <div class="col-2">
+                          <!--fecha Preparatoria-->
+                          <label for="entidad">Fechas</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="De">
+                          <input class="form-control input" type="text" name="dom_col_o" id="dom_col_o" placeholder="A">
+                        </div>
+                        <div class="col-2">
+                          <!--años Preparatoria-->
+                          <label for="ocupacion_p">Años</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Años">
+                        </div>
+                        <div class="col-2">
+                          <!--titulo Preparatoria-->
+                          <label for="ocupacion_p">Titulo Recibido</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Titulo">
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="linea"></div>
+                    <p class="fs-5 text-center fw-semibold">Profesional</p>
+                    <div id="datosf">
+                      <div class="row">
+                        <div class="col-3">
+                          <!--Nombre padre-->
+                          <label for="nombrep">Nombre </label>
+                          <input type="text" class="form-control input" name="nombrep" id="nombrep" placeholder="Nombre" aria-describedby="documentacionn">
+                        </div>  
+                        <div class="col-3">
+                          <!--domicilio-->
+                          <label for="entidad">Domicilio</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="Entidad Federativa">
+                          <input class="form-control input" type="text" name="dom_col_o" id="dom_col_o" placeholder="Colonia">
+                        </div>
+                        <div class="col-2">
+                          <!--domicilio-->
+                          <label for="entidad">Fechas</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="De">
+                          <input class="form-control input" type="text" name="dom_col_o" id="dom_col_o" placeholder="A">
+                        </div>
+                        <div class="col-2">
+                          <!--ocupacion-->
+                          <label for="ocupacion_p">Años</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Años">
+                        </div>
+                        <div class="col-2">
+                          <!--ocupacion-->
+                          <label for="ocupacion_p">Titulo Recibido</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Titulo">
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="linea"></div>
+                    <p class="fs-5 text-center fw-semibold">Comercial u otra</p>
+                    <div id="datosf">
+                      <div class="row">
+                        <div class="col-3">
+                          <!--Nombre padre-->
+                          <label for="nombrep">Nombre </label>
+                          <input type="text" class="form-control input" name="nombrep" id="nombrep" placeholder="Nombre" aria-describedby="documentacionn">
+                        </div>  
+                        <div class="col-3">
+                          <!--domicilio-->
+                          <label for="entidad">Domicilio</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="Entidad Federativa">
+                          <input class="form-control input" type="text" name="dom_col_o" id="dom_col_o" placeholder="Colonia">
+                        </div>
+                        <div class="col-2">
+                          <!--domicilio-->
+                          <label for="entidad">Fechas</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="De">
+                          <input class="form-control input" type="text" name="dom_col_o" id="dom_col_o" placeholder="A">
+                        </div>
+                        <div class="col-2">
+                          <!--ocupacion-->
+                          <label for="ocupacion_p">Años</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Años">
+                        </div>
+                        <div class="col-2">
+                          <!--ocupacion-->
+                          <label for="ocupacion_p">Titulo Recibido</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Titulo">
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="linea"></div>
+                    <p class="fs-5 text-center fw-semibold">Estudios que efectua en la realidad</p>
+                    <div id="datosf">
+                      <div class="row">
+                        <div class="col-3">
+                          <!--Nombre padre-->
+                          <label for="nombrep">Escuela </label>
+                          <input type="text" class="form-control input" name="nombrep" id="nombrep" placeholder="Nombre" aria-describedby="documentacionn">
+                        </div>  
+                        <div class="col-3">
+                          <!--domicilio-->
+                          <label for="entidad">Horario</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="Horario">
+                        </div>
+                        <div class="col-3">
+                          <!--domicilio-->
+                          <label for="entidad">Curso o Carrera</label>
+                          <input class="form-control input mb-1" type="text" name="dom_entidad_p" id="dom_entidad_p" placeholder="Carrera">
+                        </div>
+                        <div class="col-3">
+                          <!--ocupacion-->
+                          <label for="ocupacion_p">Grado</label>
+                          <input class="form-control input" type="number" name="ocupacion_p" id="ocupacion_p" placeholder="Grado">
+                        </div>
+                        <div id="escolaridadd" class="invalid-feedback">
+                        Los datos de salud con * son obligatorios
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="text-center fw-bold fs-3">
+                      Conocimientos Generales
+                    </p>
+                    <div id="conocimiento">
+                      <div class="row">
+                        <div class="col-6">
+                          <!--idiomas que domina-->
+                          <label for="idioma">Idiomas que domina <span class="obligatorio">(*)</span></label>
+                          <input class="form-control input" type="text" name="idioma" id="idioma" required="" placeholder="Idioma" aria-describedby="conocimiento">
+                        </div>
+                        <div class="col-6">
+                          <!--Funciones de oficina que domina-->
+                          <label for="funOficina">Funciones de oficina que domina<span class="obligatorio">(*)</span></label>
+                          <input class="form-control input" type="text" name="funOficina" id="funOficina" required="" placeholder="Mensajería y servicios bancarios" aria-describedby="conocimiento">
+                        </div>
+                        <div id="conocimiento"> 
+                            <!--Máquinas de oficina y/o equipo de trabajo que sepa manejar-->
+                            <label for="equipoTrab">Máquinas de oficina y/o equipo de trabajo que sepa manejar  <span class="obligatorio">(*)</span></label>
+                            <input type="text" class="form-control m-2 input" name="equipoTrab" id="equipoTrab" placeholder="Computadora / Paquetería Office" aria-describedby="conocimiento" required>
+                            <!--Otros trabajos o funciones que domina-->
+                            <label for="funDomina">Otros trabajos o funciones que domina  <span class="obligatorio">(*)</span></label>
+                            <input type="text" class="form-control m-2 input" name="funDomina" id="funDomina" placeholder="Otros trabajos o funciones que domina" aria-describedby="conocimiento" required>
+                        </div>
+                      </div>
+                      <div id="conocimiento" class="invalid-feedback">
+                        Los conocimiento generales con * son obligatorios
+                      </div>
+                    </div>
+                     <!--fin conocimientos generales-->
+
+
+                    <!--Empleo actual o aterior -->
+                    <p class="text-center fw-bold fs-3">
+                      Empleo actual o anterior
+                    </p>
+                      <div id="empleo">
+                        <div class="row">
+                          <!--inicio tabla-->
+                          <table class="table">
+                            <!--titulos de la tabla -->
+                            <thead>
+                              <tr>
+                                <th scope="col">Concepto</th>
+                                <th scope="col">Empleo actual o último</th>
+                                <th scope="col">Empleo anterior</th>
+                                <th scope="col">Empleo anterior</th>
+                              </tr>
+                            </thead>
+                            <!--fin titulos tabla -->
+
+                            <!--cuerpo de la tabla -->
+                            <tbody>
+                              <!--tiempo que pesto sus servicios -->
+                              <tr>
+                                <th >Tiempo que prestó sus servicios</th>
+                                <td><input type="text" class="form-control m-2 input" name="tiemServicio" id="tiemServicio" placeholder="3 años y 2 meses" aria-describedby="empleo" required></td>
+                                <td><input type="text" class="form-control m-2 input" name="tiemServicio" id="tiemServicio" placeholder="5 años y 1 mes" aria-describedby="empleo" required></td>
+                                <td><input type="text" class="form-control m-2 input" name="tiemServicio" id="tiemServicio" aria-describedby="empleo" required></td>
+                              </tr>
+                              <!--fin tiempo que pesto sus servicios -->
+
+                              <!--nombre de la empresa-->
+                              <tr>
+                                <th >Nombre de la Empresa</th>
+                                <td><input type="text" class="form-control m-2 input" name="funDomina" id="funDomina" placeholder="Comercial S. A." aria-describedby="empleo" required></td>
+                                <td><input type="text" class="form-control m-2 input" name="funDomina" id="funDomina" placeholder="Transportadora X" aria-describedby="empleo" required></td>
+                                <td><input type="text" class="form-control m-2 input" name="funDomina" id="funDomina" aria-describedby="empleo" required></td>
+                              </tr>
+                              <!--fin nombre empresa-->
+                              <tr>
+                                <th >Domicilio</th>
+                                <th ><input type="text" class="form-control m-2 input" name="domicilio" id="domicilio" placeholder="Zona Industrial, Azcapotzalco" aria-describedby="empleo" required></th>
+                                <td><input type="text" class="form-control m-2 input" name="domicilio" id="domicilio" placeholder="Amanecer, Puebla" aria-describedby="empleo" required></td>
+                                <td><input type="text" class="form-control m-2 input" name="domicilio" id="domicilio" placeholder="" aria-describedby="empleo" required></td>
+                              </tr>
+                              <!--telefono -->
+                              <tr>
+                                <th >Telefono</th>
+                                <th ><input type="number" class="form-control m-2 input" name="telefono" id="telefono" placeholder="5532328155 " aria-describedby="empleo" required></th>
+                                <th ><input type="number" class="form-control m-2 input" name="telefono" id="telefono" placeholder="5530298080 " aria-describedby="empleo" required></th>
+                                <td><input type="text" class="form-control m-2 input" name="telefono" id="telefono" placeholder="" aria-describedby="empleo" required></td>
+                              </tr>
+                              <!--fin telefono-->
+
+                              <!--Seccion de puestos -->
+                              <tr>
+                                <th >Puesto</th>
+                                <th >Puesto Inicio <br><input type="text" class="form-control m-2 input" name="puesto" id="puesto" placeholder="Chofer vendedor " aria-describedby="empleo" required> <br> 
+                                  <div class="linea"></div>
+                                  Puesto Final <input type="text" class="form-control m-2 input" name="puesto" id="puesto" placeholder="Chofer vendedor " aria-describedby="empleo" required></th>
+                                  
+                                <th >Puesto Inicio <br><input type="text" class="form-control m-2 input" name="puesto" id="puesto" placeholder="Chofer repartidor " aria-describedby="empleo" required> 
+                                <br> 
+                                <div class="linea"></div>
+                                Puesto Final <input type="text" class="form-control m-2 input" name="puesto" id="puesto" placeholder="Chofer repartidor " aria-describedby="empleo" required></th>
+
+                                <td><input type="text" class="form-control m-2 input" name="puesto" id="puesto" placeholder="" aria-describedby="empleo" required>
+                                  <br>
+                                  <br>
+                                  <div class="linea"></div>
+                                  <br>
+                                  <input type="text" class="form-control m-2 input" name="puesto" id="puesto" placeholder="" aria-describedby="empleo" required>
+                                </td>
+                              </tr>
+                              <!--fin puestos-->
+
+                              <!--sueldos-->
+                              <tr>
+                                <th >Sueldo</th>
+                                <th >Sueldo Inicio <br><input type="text" class="form-control m-2 input" name="Sueldo" id="Sueldo" placeholder="Chofer vendedor " aria-describedby="empleo" required> <br> 
+                                  <div class="linea"></div>
+                                  Sueldo Final <input type="text" class="form-control m-2 input" name="Sueldo" id="Sueldo" placeholder="Chofer vendedor " aria-describedby="empleo" required></th>
+                                  
+                                <th >Sueldo Inicio <br><input type="text" class="form-control m-2 input" name="Sueldo" id="Sueldo" placeholder="Chofer repartidor " aria-describedby="empleo" required> 
+                                <br> 
+                                <div class="linea"></div>
+                                Sueldo Final <input type="text" class="form-control m-2 input" name="Sueldo" id="Sueldo" placeholder="Chofer repartidor " aria-describedby="empleo" required></th>
+
+                                <td><input type="text" class="form-control m-2 input" name="Sueldo" id="Sueldo" placeholder="" aria-describedby="empleo" required>
+                                  <br>
+                                  <br>
+                                  <div class="linea"></div>
+                                  <br>
+                                  <input type="text" class="form-control m-2 input" name="Sueldo" id="Sueldo" placeholder="" aria-describedby="empleo" required>
+                                </td>
+                              </tr>
+                              <!--fin sueldos-->
+
+
+                              <tr>
+                                <th >Nombre de su jefe inmediato</th>
+                                <td><input type="text" class="form-control m-2 input" name="jefe" id="jefe" placeholder="Javier González " aria-describedby="empleo" required></td>
+                                  
+                                <td ><input type="text" class="form-control m-2 input" name="jefe" id="jefe" placeholder="Martina Ramírez " aria-describedby="empleo" required></td>
+
+                                <td><input type="text" class="form-control m-2 input" name="jefe" id="jefe" placeholder="" aria-describedby="empleo" required></td>
+                              </tr>
+                              
+                              <tr>
+                                <th >Actividades Desempeñadas</th>
+                                <td><textarea class="form-control" id="actDesem" name="" rows="3"></textarea></td>
+                                <td><textarea class="form-control" id="actDesem" name="" rows="3"></textarea></td>
+                                <td><textarea class="form-control" id="actDesem" name="" rows="3"></textarea></td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <div id="empleo"> 
+                            <!--Máquinas de oficina y/o equipo de trabajo que sepa manejar-->
+                            <label for="solInfo">Podemos solicitar informes de usted  <span class="obligatorio">(*)</span></label>
+                            <br>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="solInfo" value="option1">
+                              <label class="form-check-label" for="solInfoS">Si</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="solInfo" value="option2">
+                              <label class="form-check-label" for="solInfoN">No(razones)</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input type="text" class="form-control m-2 input" name="solInfo" id="solInfo" placeholder="" aria-describedby="empleo" required>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div id="empleo" class="invalid-feedback">
+                          Los campos con * son obligatorios
+                        </div>
+                        <!--fin Empleo actual o aterior-->
+                      </div>
+
+                        <!--Referencias Personales-->
+                        <p class="text-center fw-bold fs-3">
+                          Referencias Personales
+                        </p>
+                        <div id="refPersonales">
+                          <div class="row">
+                            <!--tabla referencias personales-->
+                            <table class="table">
+                              <!--titulos de la tabla -->
+                              <thead>
+                                <tr>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Domicilio</th>
+                                  <th scope="col">Teléfono</th>
+                                  <th scope="col">Ocupación</th>
+                                  <th scope="col">Tiempo de conocerse</th>
+                                </tr>
+                              </thead>
+                              <!--fin titulos tabla -->
+
+                              <!--cuerpo de la tabla -->
+                              <tbody>
+                                <!--columna uno -->
+                                <tr>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="Araceli López " aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="La venta, Ixtapalucas" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="5544550000" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="Gerente" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="5 años" aria-describedby="empleo" required></td>
+                                </tr>
+                                <!--fin columna 1 -->
+                                <!--fila columna 2 -->
+                                <tr>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="Ricardo Alcántara " aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="Parral, Hidalgo " aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="3041000099" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="Chofer" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="4 años" aria-describedby="empleo" required></td>
+                                </tr>
+                                <!--fin columna 2 -->
+                                <!--fila columna 3 -->
+                                <tr>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="Patricia Rosales" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="CIVAC, Morelos " aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="7536666888" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="refPersonales" id="refPersonales" placeholder="Gerente de ventas" aria-describedby="empleo" required></td>
+                                  <td><input type="text" class="form-control m-2 input" name="tiemServicio" id="tiemServicio" placeholder="3 años" aria-describedby="empleo" required></td>
+                                </tr>
+                                <!--fin columna 3-->
+                              </tbody>
+                            </table>
+                            <!--fin tabla referencias personales-->
+
+                          </div>
+                          <div id="refPersonales" class="invalid-feedback">
+                            Los campos con * son obligatorios
+                          </div>
+                        </div>
+                        <!--fin Referencias Personales-->
+
+
+                        <!--Datos generales-->
+                        <p class="text-center fw-bold fs-3">
+                          Datos Generales
+                        </p>
+                        <!--datos generales-->
+                        <div id="datosGenerales">
+                          <div class="row">
+                            <div class="col-6">
+                              <!--¿Cómo se enteró de este empleo?-->
+                              <label for="enteroEmpleo">¿Cómo se enteró de este empleo? <span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="enteroEmpleo" id="enteroEmpleo">
+                                <label class="form-check-label" for="enteroEmpleoA">
+                                  Anuncio
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="enteroEmpleo" id="enteroEmpleo" checked>
+                                <label class="form-check-label" for="enteroEmpleO">
+                                  Otro medio(Anotelo)
+                                </label>
+                                
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input type="text" class="form-control m-2 input" name="enteroEmpleo" id="enteroEmpleo" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                            </div>
+                            <!--fin ¿Cómo se enteró de este empleo?-->
+                            
+                            <div class="col-6">
+                              <!--¿Tienes familiares y/o amigos que laboren en esta empresa?-->
+                              <label for="famiEmpresa">¿Tienes familiares y/o amigos que laboren en esta empresa?<span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="famiEmpresa" id="famiEmpresa">
+                                <label class="form-check-label" for="famiEmpresaN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="famiEmpresa" id="famiEmpresa" checked>
+                                <label class="form-check-label" for="famiEmpresaS">
+                                  Si (Nombrelos)
+                                </label>
+                                
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input type="text" class="form-control m-2 input" name="famiEmpresa" id="famiEmpresa" placeholder="" aria-describedby="empleo" required>
+                              </div>
+
+                            </div>
+                            <div class="linea"></div>
+                            <!--fin¿Tienes familiares y/o amigos que laboren en esta empresa?-->
+
+                            <div class="col-6">
+                              <!--¿Ha estado Afianzado?-->
+                              <label for="afianzado">¿Ha estado Afianzado?<span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="afianzado" id="afianzado">
+                                <label class="form-check-label" for="afianzadoN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="afianzado" id="afianzado" checked>
+                                <label class="form-check-label" for="afianzadoS">
+                                  Si (Nombre de la Compañía = CIA)
+                                </label>
+                                
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input type="text" class="form-control m-2 input" name="afianzado" id="afianzado" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                            </div>
+
+
+                            <div class="col-6">
+                              <!--¿Pertenece a algún sindicato?-->
+                              <label for="sindicato">¿Pertenece a algún sindicato?<span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sindicato" id="sindicato">
+                                <label class="form-check-label" for="sindicatoN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sindicato" id="sindicato" checked>
+                                <label class="form-check-label" for="sindicatoS">
+                                  Sí (¿A cuál?)
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input type="text" class="form-control m-2 input" name="sindicato" id="sindicato" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                            </div>
+
+                            <div class="linea"></div>
+
+                            <div class="col-6">
+                              <!--¿Tiene seguro de vida?-->
+                              <label for="seguroVida">¿Tiene seguro de vida?<span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="seguroVida" id="seguroVida">
+                                <label class="form-check-label" for="seguroVidaN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="seguroVida" id="seguroVida" checked>
+                                <label class="form-check-label" for="seguroVidaS">
+                                  Si (De qué CIA)
+                                </label>
+                                
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input type="text" class="form-control m-2 input" name="seguroVida" id="seguroVida" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                              <label for="seguroVida">Importe mensual $<span class="obligatorio">(*)</span></label>
+                              <input type="text" class="form-control m-2 input" name="seguroVida" id="seguroVida" placeholder="" aria-describedby="empleo" required>
+
+                            </div>
+                            <!--fin ¿Tiene seguro de vida?-->
+
+
+
+                            <div class="col-6">
+                              <!--¿Puede viajar?-->
+                              <label for="viajar">¿Puede viajar?<span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="viajar" id="viajar">
+                                <label class="form-check-label" for="viajarS">
+                                  Sí
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="viajar" id="viajar" checked>
+                                <label class="form-check-label" for="viajarN">
+                                  No (Razones)
+                                </label>
+                                
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input type="text" class="form-control m-2 input" name="viajar" id="viajar" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                            </div>
+                            <!--fin ¿Puede viajar?-->
+
+                            <div class="linea"></div>
+
+                            <div class="col-6">
+                              <!--¿Está dispuesto a cambiar de lugar de residencia?-->
+                              <label for="cambiarReside">¿Está dispuesto a cambiar de lugar de residencia? <span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cambiarReside" id="cambiarReside">
+                                <label class="form-check-label" for="cambiarResideS">
+                                  Sí
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cambiarReside" id="cambiarReside" checked>
+                                <label class="form-check-label" for="cambiarResideN">
+                                  No (Razones)
+                                </label>
+                                
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input type="text" class="form-control m-2 input" name="cambiarReside" id="cambiarReside" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                            </div>
+                            <!--fin ¿Está dispuesto a cambiar de lugar de residencia?-->
+
+                            <div class="col-6">
+                              ¿Fecha en que podría presentarse a trabajar?
+                              <label for="fechTraba">¿Fecha en que podría presentarse a trabajar? <span class="obligatorio">(*)</span></label>
+                              <input type="date" class="form-control m-2 input" name="fechTraba" id="fechTraba" placeholder="" aria-describedby="empleo" required>
+                            </div>
+                          </div>  
+                          <div id="datosGenerales" class="invalid-feedback">
+                            Los campos con * son obligatorios
+                          </div>
+                        </div>
+                        <!--fin datos generales-->
+
+                        <p class="text-center fw-bold fs-3">
+                          Datos Económicos
+                        </p>
+                        <!--datos economicos-->
+                        <div id="datosEco">
+                          <div class="row">
+                            <div class="col-6">
+                              <!--¿Tiene usted otros ingresos?-->
+                              <label for="otroIngreso">¿Tiene usted otros ingresos? <span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="otroIngreso" id="otroIngreso">
+                                <label class="form-check-label" for="otroIngresoN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="otroIngreso" id="otroIngreso2" checked>
+                                <label class="form-check-label" for="otroIngresoS">
+                                  Sí (¿Cuáles?)
+                                </label>
+                                <input type="text" class="form-control m-2 input" name="otroIngreso" id="otroIngreso" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                              <label for="otroIngreso">Importe mensual $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="otroIngreso" id="otroIngreso" placeholder="$" aria-describedby="empleo" required>
+                            </div>
+                            <!--fin ¿Tiene usted otros ingresos?-->
+
+                            <div class="col-6">
+                              <!--¿Su cónyuge trabaja?-->
+                              <label for="conyTrab">¿Su cónyuge trabaja? <span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="conyTrab" id="conyTrab">
+                                <label class="form-check-label" for="conyTrabN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="conyTrab" id="conyTrab2" checked>
+                                <label class="form-check-label" for="conyTrabS">
+                                  Sí (¿Dónde?)
+                                </label>
+                                <input type="text" class="form-control m-2 input" name="conyTrab" id="conyTrab" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                              <label for="conyTrab">Percepción mensual $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="conyTrab" id="conyTrab" placeholder="$" aria-describedby="empleo" required>
+                            </div>
+                            <!--fin ¿Su cónyuge trabaja?-->
+                            <div class="linea"></div>
+
+
+
+                            <div class="col-6">
+                              <!--¿Vive en casa propia?-->
+                              <label for="casaPropia">¿Vive en casa propia?  <span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="casaPropia" id="casaPropia">
+                                <label class="form-check-label" for="casaPropiaN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="casaPropia" id="casaPropia" checked>
+                                <label class="form-check-label" for="casaPropiaS">
+                                  Sí 
+                                </label>
+                                
+                              </div>
+                              <label for="casaPropia">Importe mensual $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="casaPropia" id="casaPropia" placeholder="$" aria-describedby="empleo" required>
+                            </div>
+                            <!--fin -¿Vive en casa propia?-->
+
+                            <div class="col-6">
+                              <!--¿Tienes Deudas?-->
+                              <label for="deudas">¿Tienes Deudas? <span class="obligatorio">(*)</span></label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="deudas" id="deudas">
+                                <label class="form-check-label" for="deudasN">
+                                  No
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="deudas" id="deudas" checked>
+                                <label class="form-check-label" for="deudasS">
+                                  Sí (¿De qué clase?)
+                                </label>
+                                <input type="text" class="form-control m-2 input" name="deudas" id="deudas" placeholder="" aria-describedby="empleo" required>
+                              </div>
+                              <label for="importeDeudas">Importe $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="importeDeudas" id="importeDeudas" placeholder="$" aria-describedby="empleo" required>
+                            </div>
+                            <!--fin ¿Tienes Deudas?-->
+
+                            <div class="linea"></div>
+
+                            <div class="col-6">
+                              <!--Informacion de sus economia-->
+                              <label for="ingreso">Ingreso $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="ingreso" id="ingreso" placeholder="$7,200" aria-describedby="empleo" required>
+
+                              <label for="egreso">Egresos $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="egreso" id="egreso" placeholder="$6,200" aria-describedby="empleo" required>
+                              
+                              <label for="ahorros">Ahorros $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="ahorros" id="ahorros" placeholder="$1,000" aria-describedby="empleo" required>
+                              
+                              <label for="total">Total (gastos mensuales) $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="total" id="total" placeholder="$6,200" aria-describedby="empleo" required>
+                            </div>
+                            <!--fin ¿Cómo se enteró de este empleo?-->
+
+                            <div class="col-6">
+                              <label for="abonoMensu">¿Cuánto abona mensualmente? $<span class="obligatorio">(*)</span></label>
+                              <input type="number" class="form-control m-2 input" name="abonoMensu" id="abonoMensu" placeholder="$" aria-describedby="empleo" required>
+
+
+                            </div>
+
+                            
+                            
+                          </div>  
+                          <div id="datosEco" class="invalid-feedback">
+                            Los campos con * son obligatorios
+                          </div>
+                        </div>
+                        <!--fin datos generales-->
+
+
+
+                  </div>
+                </div>
+                <!--Enviar/Cancelar-->
+                <div style="display: flex; justify-content: center; " >
+                  <button type="button" id="myBtn"  class="btn m-1 boton" data-target="#miModal">Enviar</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal" onclick="comenzarCuentaRegresiva()">Abrir modal</button>
+                  <button type="reset" name="borrar" class="btn btn-secondary m-1">Cancelar</button>
+                </div>
+              </form><!-- form end -->
+            </div><!-- /.overflow-auto -->
+        </div><!-- /.card -->
+      </div><!-- /.col-md-6-->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+  
+  <!-- Modal -->
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Mi Modal con cuenta regresiva</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Contenido del modal aquí...</p>
+        <p id="cuenta-regresiva">10</p>
+        <p id="cuenta-regresiva"></p> <!-- Elemento HTML para la cuenta regresiva -->
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-secondary" id="cancelar" data-dismiss="modal" onclick="detenerCuentaRegresiva()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal 
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" >
+          <p id="modal-content"></p>
+          <div id="contador">10</div>
+          
+          <div style="display: flex; justify-content: right; ">
+            <button type="button" class="btn boton" data-bs-dismiss="modal" id="aceptar">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  Modal -->
+
+    <script src="js/appCurriculum.js"></script>
+
+    <!-- jQuery -->
+    <script src="admin-lte/plugins/jquery/jquery.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="admin-lte/dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="admin-lte/dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="admin-lte/dist/js/pages/dashboard.js"></script>
+</body>
+
+</html>
+ss
