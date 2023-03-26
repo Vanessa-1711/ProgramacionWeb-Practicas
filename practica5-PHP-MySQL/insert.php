@@ -15,7 +15,7 @@
 
         // revisar conexion
         if($conexion==false){
-            echo ("ERROR")
+            echo ("ERROR");
             die("Error no existe una conexion a la base de datos".mysqli_connect_error());
         }
         //tomar los 5 valores del formulario a traves de los datos de los campos
