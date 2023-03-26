@@ -30,7 +30,6 @@ if (isset($_POST['nombre'], $_POST['email'],$_POST['direccion'], $_POST['telefon
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- hoja de estilos -->
   <link href="estilos.css" rel="stylesheet">
-  </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
   <!-- apartado de formulario  -->
