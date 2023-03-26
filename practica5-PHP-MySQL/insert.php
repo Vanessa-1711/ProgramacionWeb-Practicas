@@ -8,6 +8,7 @@
     <!-- Theme style -->
 </head>
 <body>
+    <h3>AYUDAAAAAAAAAA</h3>
     <?php
         //conexion a ala base de datos 
         //nombre del servidor + nombre de usuario+contraseña + nombre de la base de datos
